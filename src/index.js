@@ -1,2 +1,2 @@
-import menuGaleryItems from './js/markup.js'
+import * as markup from './js/markup.js'
 

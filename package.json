@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/SerhiyStepanov/goit-js-hw-10-food-service/issues"
   },
-  "homepage": "https://SerhiyStepanov.github.io/goit-js-hw-10-food-service",
+  "homepage": "",
   "devDependencies": {
     "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4",

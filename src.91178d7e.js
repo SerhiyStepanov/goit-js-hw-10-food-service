@@ -9,8 +9,10 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"tW6H":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=r(require("../template/template-items.hbs")),t=r(require("../menu.json"));function r(e){return e&&e.__esModule?e:{default:e}}var u=document.querySelector(".js-menu"),d=(0,e.default)(t.default),o=u.insertAdjacentHTML("beforeend",d);exports.default=o;
 },{"../template/template-items.hbs":"leng","../menu.json":"mA8c"}],"qwQt":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.onInputToggleChecked=d;var e=document.querySelector("#theme-switch-toggle"),t={LIGHT:"light-theme",DARK:"dark-theme"};function d(d){return d.target.checked?(document.body.classList.add(t.DARK),document.body.classList.remove(t.LIGHT)):(document.body.classList.add(t.LIGHT),document.body.classList.remove(t.DARK)),e}e.addEventListener("change",d);
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.onInputToggleChecked=d;var e=document.querySelector("#theme-switch-toggle"),t={LIGHT:"light-theme",DARK:"dark-theme"};function d(d){return d.currentTarget.checked?(document.body.classList.add(t.DARK),document.body.classList.remove(t.LIGHT)):(document.body.classList.add(t.LIGHT),document.body.classList.remove(t.DARK)),e}e.addEventListener("change",d);
+},{}],"kZ4i":[function(require,module,exports) {
+var e=document.querySelector("#theme-switch-toggle");function c(e){console.log(e.target.checked)}console.log(e.checked),e.addEventListener("change",c);
 },{}],"Focm":[function(require,module,exports) {
-"use strict";var e=u(require("./js/markup.js")),r=require("./js/theme.js");function u(e){return e&&e.__esModule?e:{default:e}}(0,r.onInputToggleChecked)();
-},{"./js/markup.js":"tW6H","./js/theme.js":"qwQt"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.696818dd.js.map
+"use strict";var e=o(require("./js/markup.js")),r=require("./js/theme.js"),t=u(require("./js/localthemesave.js"));function n(){if("function"!=typeof WeakMap)return null;var e=new WeakMap;return n=function(){return e},e}function u(e){if(e&&e.__esModule)return e;if(null===e||"object"!=typeof e&&"function"!=typeof e)return{default:e};var r=n();if(r&&r.has(e))return r.get(e);var t={},u=Object.defineProperty&&Object.getOwnPropertyDescriptor;for(var o in e)if(Object.prototype.hasOwnProperty.call(e,o)){var f=u?Object.getOwnPropertyDescriptor(e,o):null;f&&(f.get||f.set)?Object.defineProperty(t,o,f):t[o]=e[o]}return t.default=e,r&&r.set(e,t),t}function o(e){return e&&e.__esModule?e:{default:e}}
+},{"./js/markup.js":"tW6H","./js/theme.js":"qwQt","./js/localthemesave.js":"kZ4i"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.91178d7e.js.map

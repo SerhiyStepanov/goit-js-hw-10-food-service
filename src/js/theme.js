@@ -18,3 +18,5 @@ function onInputToggleChecked  (event) {
     }
     return inputToggle;
 }
+
+export { onInputToggleChecked };

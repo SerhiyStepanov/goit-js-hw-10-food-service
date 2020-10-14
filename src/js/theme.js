@@ -8,7 +8,7 @@ const Theme = {
 
 inputToggle.addEventListener('change', onInputToggleChecked)
 
-function onInputToggleChecked(event) {
+function onInputToggleChecked  (event) {
     if (event.target.checked) {
         document.body.classList.add(Theme.DARK);
         document.body.classList.remove(Theme.LIGHT)

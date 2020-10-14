@@ -5,4 +5,4 @@ const menuGaleryItems = document.querySelector('.js-menu')
 const markupItemsTemplate = itemsTemplate(menuItems)
 
 export default menuGaleryItems.insertAdjacentHTML('beforeend', markupItemsTemplate)
-console.log(itemsTemplate(menuItems))
+

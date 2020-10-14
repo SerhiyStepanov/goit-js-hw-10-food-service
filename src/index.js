@@ -1,2 +1,2 @@
-import * as markup from './js/markup.js'
-
+import markupCart from './js/markup.js'
+import theme from './js/theme'

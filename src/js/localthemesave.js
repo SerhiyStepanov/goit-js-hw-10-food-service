@@ -9,9 +9,7 @@ const Theme = {
 
 getInputValue()
 
-// console.log(JSON.stringify(inputChangeTheme.checked))
- 
-function onInputChecked(event) {
+export function onInputChecked(event) {
     const value = event.target.checked
     if (value) {
      localStorage.setItem('checked', JSON.stringify(value) )
@@ -21,7 +19,7 @@ function onInputChecked(event) {
     }
 }
     
-function getInputValue() {
+export function getInputValue() {
     const saveValue = localStorage.getItem('checked')
     if (saveValue) {
         console.log(saveValue)
